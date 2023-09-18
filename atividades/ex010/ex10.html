@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <title>Mídias em html</title>
+    <hr>
+    <p>fazer um teste aqui com o intuito de fazer as imagens mudarem de tamanho para auxiliar o usuario m pois dependendo do dispositivo ,o tamanho muda.</p>
+    <picture>
+        <source media="(max-width:750px )" srcset="img/P.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="img/M.png" type="image/png">
+        <img src="img/G.png" alt="imagem dinâmica">
+    </picture>   
+    <h2>testar denovo som sksks</h2>
+    <audio preload="metadata"  controls>
+        <!--o arquivo mp3 é o mesmo mpeg-->
+     <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+     <source src="midia/guanacast-33.ogg" type="audio/ogg">
+     <source src="midia/guanacast-33.wav" type="audio/wav">
+     <p>Infelimente seu navegador nao pega musga. <a href="midia/guanacast-33.mp3"> baixa por aqui mlk sksksks!!</a></p>
+    </audio>
+</body>
+</html>

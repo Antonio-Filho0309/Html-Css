@@ -1,0 +1,420 @@
+/* Zerando os padrões para configurar melhor a página */
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    
+}
+
+body{
+    display: flex;
+    
+    flex-direction: row;
+}
+
+
+#sidebar{
+    width: 270px;
+    height:100vh;
+    flex-shrink: 0;
+    background-image: linear-gradient(135deg, #030303 0%, #414141 67.20%, #5C5C5C 100%);
+    animation-duration: 1s;
+    color: white;
+}
+
+@keyframes mostraSidebar{
+    from {margin-left: -100vh}
+    top{margin-left: 0;}
+}
+
+#menu{
+    cursor: pointer;
+    margin-left: 34px;
+    margin-top: 37px;
+    margin-right: 290px;
+}
+
+#tlogo{
+    display: flex;
+    width: 138px;
+    height: 58px;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    left: 60px;
+    font-size: 14px;
+    top: 100%;
+}
+ 
+#altis{
+   font-size:20px; 
+}
+
+#logolivro{
+    width: 172px;
+    height: 59px;
+    flex-shrink: 0;
+    margin-left: 49px;
+    margin-top: 50px;
+    margin-right: 87px;
+    font-weight: 500;
+}
+
+#primeiro{
+    margin-left: 1px;
+    margin-top: 200px;
+    display: flex;
+    align-items: center;
+}
+
+.lista{
+    margin-top: 8px;
+    width: 99%;
+    height: 45px;
+    margin-left: 1px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 16px;
+        display: flex;
+        align-items: center;
+}
+       
+.selected{
+    width: 99%;
+    height: 45px;
+    flex-shrink: 0;
+    background: linear-gradient(135deg, #111 0%, #373737 100%);
+    display: flex;
+    align-items: center;
+}
+
+
+ 
+
+
+
+.lista img#retangulo{
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.lista:hover{
+    width: 265px;
+    height: 45px;
+    flex-shrink: 0;
+    background: linear-gradient(135deg, #111 0%, #373737 100%);
+    display: flex;
+    align-items: center; 
+    cursor: pointer;
+}
+
+.lista:hover img#retangulo{
+    visibility: visible;
+    opacity: 1;
+}
+
+#altis{
+    width: 199px;
+    height: 78px;
+   
+}
+
+header{
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.16);
+    flex-shrink: 0;
+    border: 1px solid #eee;
+}
+
+#circulo{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #1E6EAA;
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    color: white;
+}
+
+.conteudo_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+#dashboard{
+display: flex;
+width: 310px;
+height: 40px;
+flex-direction: column;
+flex-shrink: 0;
+color: #404040;
+padding: 12px;
+font-size: 22px;
+font-weight: 700;
+}
+
+.container01{
+    margin: 60px auto 0 auto;
+     width: 1200px;
+    height: 740px;
+    flex-shrink: 0;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border: 1px solid #eee;
+}
+
+.titulo_container{
+    display: flex;
+    width: 310px;
+    height: 40px;
+    flex-direction: column;
+    flex-shrink: 0;
+    color: #404040;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 700;
+    
+}
+
+.livros_mais_alugados{
+    margin-left: 14px;
+    height: 150px;
+    width: 1160px;
+    flex-shrink: 0;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border: 1px solid #eee;
+}
+
+.container03{
+    width: 550px;
+    height: 500px;
+    flex-shrink: 0;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border: 1px solid #eee;
+    margin-left: 14px;
+    margin-top:10px;
+  
+}
+
+#alugueis_atrasado{
+    display: flex;
+    width: 373px;
+    height: 46px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+table{
+    margin-left: 5px;
+    background-color: white;
+    color: black;
+    border-collapse: collapse;
+    width: 98%;
+    
+}
+
+th{
+    background-color: #5D5D5D;
+    color: white;   
+}
+
+
+th,td{
+  padding: 4px;
+}
+
+td{
+ border-bottom: 1px solid #eee;
+ align-items: center;
+ text-align: center;
+}
+
+#tabela02{
+    margin-top: 8px;
+}
+
+.container04{
+    width: 573px;
+    height: 180px;
+    flex-shrink: 0;
+    margin-left: 50%;
+    margin-top: -500px;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border: 1px solid #eee;
+}
+
+.titulo02{
+    display: flex;
+    align-items: center;
+}
+
+#lapis{
+    margin-top: -20px;
+    margin-left:200px;
+    cursor:pointer
+}
+
+#livro-verde{
+    cursor:pointer;
+}
+
+.progresso{
+   margin-top: 90px;
+}
+
+.progress-bar {
+    margin-left: 8px;
+    width: 98%;
+    background-color: #97C7EB;
+    height: 20px;
+    height: 10px;
+  }
+  
+  .progress {
+   
+    width: 50%; 
+    height: 100%;
+    background-color:#1E6EAA;
+  }
+
+  #texto_num{
+    display: block;
+    text-align: center;
+    margin: 2px;
+
+  }
+
+  #num_maior{
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  #porcetagem{
+    display: block;
+    margin-top: 8px;
+    text-align: center;
+    opacity: 0.5;
+    font-size: 11px;
+  }
+  
+  .container05{
+    margin-top: 18px;
+    margin-left:600px ;
+    width: 573px;
+    height: 298px;
+    flex-shrink: 0;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border: 1px solid #eee;
+  }
+
+.ultimo_livro{
+    margin-left: 29px;
+    width: 480px;
+    height: 80px;
+    flex-shrink: 0;
+    background: #1E6EAA;
+    padding: 12px;
+    color: white;
+}
+
+.item{
+    display: flex;
+    align-items: center;
+}
+
+#item2{
+  margin-top: 45px ;
+  margin-left: -12px;
+}
+
+.livroplus{
+    display: flex;
+    width: 240px;
+    height: 40px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #404040;
+    font-style: italic;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border: 1px solid #eee;
+    padding: 18px;
+    margin-left: 8px;
+    margin-top: -14px;
+}
+
+.num{
+    font-weight: 700;
+    font-size:45px;
+    color: #818181;
+}
+
+.livroplus2{
+    display: flex;
+    width: 240px;
+    height: 40px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #404040;
+    font-style: italic;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border: 1px solid #eee;
+    padding: 18px;
+    margin-left: 300px;
+    margin-top: -78px;
+}
+
+.livroplus3{
+    display: flex;
+    width: 240px;
+    height: 40px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #404040;
+    font-style: italic;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border: 1px solid #eee;
+    padding: 18px;
+    margin-left: 590px;
+    margin-top: -78px;
+}
+
+.livroplus4{
+    display: flex;
+    width: 240px;
+    height: 40px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #404040;
+    font-style: italic;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border: 1px solid #eee;
+    padding: 18px;
+    margin-left: 876px;
+    margin-top: -78px;
+}
+
+
+
+
+
+
+
+

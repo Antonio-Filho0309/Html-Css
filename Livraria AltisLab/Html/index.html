@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Altislab+</title>
+    <link rel="stylesheet" href="../Css/estilo.css">
+</head>
+<body>
+
+ <!--Sidebar-->
+ <div id="sidebar">
+    <img src="../Imagens/menu.svg" alt="menu" id="menu">
+
+    <div id="logolivro">
+        <p id="tlogo">BIBLIOTECA  <span id="altis">ALTISLAB+</span></p>
+        <img src="../Imagens/logo_livro.svg" alt="logo_livro">
+    </div>
+
+    <div class="selected" id="primeiro">
+        <img src="../Imagens/lista.svg" alt="" id="retangulo">
+            <img src="../Imagens/home.svg" alt="" style="padding-left: 8px;">&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="home">Dashboard</label>
+    </div>
+
+    <div class="lista">
+       <img src="../Imagens/lista.svg" alt="" id="retangulo">
+        <img src="../Imagens/manager.svg" alt="" style="padding-left: 8px;">&nbsp;&nbsp;&nbsp;&nbsp;
+        <label for="home">Administração</label>         
+    </div>
+    </div>
+    <!--Sidebar-->
+
+    <div style="width: 100%;">
+        <header>
+            
+                <div class="conteudo_header">
+                    <img src="../Imagens/altis_logo.png" alt="logo Altislab" id="altis">
+                    <div id="circulo">AF</div>
+                </div>
+            
+        </header>
+        <main>
+            <div class="container01">
+                <span id="dashboard">Dashboard</span>
+        
+                <div class="livros_mais_alugados">
+                    <span class="titulo_container">LIVROS MAIS ALUGADOS</span>
+                    <div class="livroplus">
+                        <span class="num">1</span>&nbsp;&nbsp;&nbsp;
+                        <span>Código limpo: Habilidades práticas do Agile Software</span>
+                    </div>
+                    <div class="livroplus2">
+                        <span class="num">2</span>&nbsp;&nbsp;&nbsp;
+                        <span>Java: Como Programar</span>
+                    </div>
+                    <div class="livroplus3">
+                        <span class="num">3</span>&nbsp;&nbsp;&nbsp;
+                        <span>Desenvolvimento Real de
+                            Software: Um guia de projetos para fundamentos em Java</span>
+                    </div>
+                    <div class="livroplus4">
+                        <span class="num">4</span>&nbsp;&nbsp;&nbsp;
+                        <span>Arquitetura limpa: O guia do artesão para estrutura e design de software</span>
+                    </div>
+                </div>
+        
+        
+                <div class="container03">
+                    <span class="titulo_container" id="alugueis_atrasados">ALUGUÉIS EM ATRASO</span>
+        
+                  <table>
+                    <tr id="tabela">
+                        <th >Livro</th>
+                        <th >Usúario</th>
+                        <th >Previsão de Devolução</th>
+                        <th >Ações</th>
+                       </tr>
+                       <tr>
+                        <td data-cell="Livro">Javascript</td>
+                        <td data-cell="usuario">Caio cunha</td>
+                        <td data-cell="previsao">22/05/2023</td>
+        
+                        <td data-cell="acao"><img src="../Imagens/livro-verde.svg" alt="excluir" id="livro-verde"></td>
+        
+                       </tr>
+                       <tr>
+                        <td data-cell="Livro">Javascript</td>
+                        <td data-cell="usuario">Caio cunha</td>
+                        <td data-cell="previsao">22/05/2023</td>
+        
+                        <td data-cell="acao"><img src="../Imagens/livro-verde.svg" alt="excluir" id="livro-verde"></td>
+        
+                       </tr>
+                       <tr>
+                        <td data-cell="Livro">Javascript</td>
+                        <td data-cell="usuario">Caio cunha</td>
+                        <td data-cell="previsao">22/05/2023</td>
+        
+                        <td data-cell="acao"><img src="../Imagens/livro-verde.svg" alt="excluir" id="livro-verde"></td>
+                       </tr>
+                  </table>
+                  <br>
+                  <!---Fim da tabela 1 -->
+                  <span class="titulo_container" >LIVROS ADICIONADOS RECENTEMENTE</span>
+                  <table>
+                    <tr >
+                        <th >Livro</th>
+                        <th >Usúario</th>
+                        <th >Previsão de Devolução</th>
+                        <th >Ações</th>
+                       </tr>
+                       <tr>
+                        <td data-cell="Livro">Javascript</td>
+                        <td data-cell="usuario">Caio cunha</td>
+                        <td data-cell="previsao">22/05/2023</td>
+        
+                        <td data-cell="acao"><img src="../Imagens/livro-verde.svg" alt="excluir" id="livro-verde"></td>
+        
+                       </tr>
+                       <tr>
+                        <td data-cell="Livro">Javascript</td>
+                        <td data-cell="usuario">Caio cunha</td>
+                        <td data-cell="previsao">22/05/2023</td>
+        
+                        <td data-cell="acao"><img src="../Imagens/livro-verde.svg" alt="excluir" id="livro-verde"></td>
+        
+                       </tr>
+                       <tr>
+                        <td data-cell="Livro">Javascript</td>
+                        <td data-cell="usuario">Caio cunha</td>
+                        <td data-cell="previsao">22/05/2023</td>
+        
+                        <td data-cell="acao"><img src="../Imagens/livro-verde.svg" alt="excluir" id="livro-verde"></td>
+                       </tr>
+                  </table>
+                </div>
+        
+                <div class="container04">
+                    <div class="titulo02">
+                        <span class="titulo_container">META DE ALUGUÉIS</span>
+                        <img src="../Imagens/lapis.svg" alt="lapis" id="lapis">
+                        </div>
+                        <span id="texto_num"><span id="num_maior">80</span>/160</span>
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                                <span id="porcetagem">(50%)</span>
+                              </div>
+        
+                </div>
+        
+                <div class="container05">
+                    <span class="titulo_container">ULTIMOS ALUGUÉIS</span>
+                    <div class="ultimo_livro">
+                        <div class="item">
+                            <img src="../Imagens/livro-aberto.svg" alt="livro">&nbsp;&nbsp;
+                            <span>Código limpo:Habilidades práticas do Agile Software</span>
+                        </div>
+                        <br>
+                        <div class="item">
+                            <img src="../Imagens/boneco.svg" alt="user">&nbsp;&nbsp;
+                            <span>Caio Cunha</span>
+                        </div>
+                        <div class="ultimo_livro" id="item2">
+                            <div class="item">
+                                <img src="../Imagens/livro-aberto.svg" alt="livro">&nbsp;&nbsp;
+                                <span>Java , Como progamar</span>
+                            </div>
+                            <br>
+                            <div class="item">
+                                <img src="../Imagens/boneco.svg" alt="user">&nbsp;&nbsp;
+                                <span>Caio Cunha</span>
+                            </div>
+        
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+</body>
+<script src="../Javascript/Javascript.js"></script>
+</html>

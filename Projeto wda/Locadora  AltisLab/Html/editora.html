@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Altislab+</title>
+    <link rel="stylesheet" href="../Css/estilo.css">
+</head>
+<body>
+
+ <!--Sidebar-->
+ <div class="sidebar" id="sidebar">
+    <img src="../Imagens/menu.svg" alt="menu"    id="menu" onclick="abrirfechar()">
+
+    <div id="logolivro">
+        <p id="tlogo">BIBLIOTECA  <span id="altis">ALTISLAB+</span></p>
+        <img src="../Imagens/logo_livro.svg" alt="logo_livro">
+    </div>
+
+    <a href="index.html" class="opcoes">
+        <div class="lista" id="primeiro">
+            <img src="../Imagens/lista.svg" alt="" id="retangulo">
+                <img src="../Imagens/home.svg" alt="" style="padding-left: 8px;">&nbsp;&nbsp;&nbsp;&nbsp;
+               <label for="home">Dashboard</label>
+        </div>
+    </a>
+    <div class="selected" style="margin-top: 8px;">
+       <img src="../Imagens/lista.svg" alt="" id="retangulo">
+        <img src="../Imagens/manager.svg" alt="" style="padding-left: 8px;">&nbsp;&nbsp;&nbsp;&nbsp;
+        <label for="home">Administração</label>
+    </div>
+    <ul>
+            <div class="linhadomenu"></div>
+            <div class="itemlist"><a href="usuario.html" class="opcoes">USUÁRIOS</a></div>
+            <div class="linhadomenu"></div>
+            <div class="itemlist"><a href="livro.html" class="opcoes" style="margin-top: 15px;" >LIVROS</a></div>
+            <div class="linhadomenu"></div>
+            <div class="itemlist"><a href="#" class="opcoes" id="atual">EDITORAS</a></div>
+            <div class="linhadomenu"></div>
+            <div class="itemlist"><a href="aluguel.html" class="opcoes">ALUGUEIS</a></div>
+            <div class="linhadomenu"></div>
+      
+       </ul>
+    </div>
+    <!--Sidebar-->
+
+
+
+    <div style="width: 100%;" id="ajustar">
+        <header>
+            
+                <div class="conteudo_header">
+                    <img src="../Imagens/altis_logo.png" alt="logo Altislab" id="altis">
+                    <div id="circulo">AF</div>
+                </div>
+            
+        </header>
+        <main >
+            <div class="container01" >
+                
+                <h1 id="titulo">Editoras</h1>
+                <span id="subtitulo">Administração > Editoras </span>
+
+                <div id="input">
+                    <img src="../Imagens/filtro.svg" alt="filtro" id="filtro">
+                    <input type="text" name="" id="texto" placeholder="Filtrar por nome">
+                   <button id="bt">FILTRAR</button>
+                </div>
+
+               <div style="margin-top: -35px; margin-left: 88px;"><button id="adicionar">ADICIONAR EDITORA</button></div>
+
+               <!--Tabela-->
+               <br>
+                  <table id="tabelas">
+                    <tr id="tabela">
+                        <thead>
+                            <th>Nome</th>
+                            <th>Cidade</th>
+                            <th>Ações</th>
+                        </thead>
+                       </tr>
+                       <tr>
+                        <td data-cell="Nlivro">Editora Rocco</td>
+                        <td data-cell="usuario">São Paulo</td>
+        
+                        <td data-cell="acao"><img src="../Imagens/lapis01.svg" alt="excluir" id="livro-verde">
+                        <img src="../Imagens/lixeira.svg" alt="" id="livro-verde">
+                        </td>
+        
+                       </tr>
+                       <tr>
+                        <td data-cell="Nlivro">Editora Rocco</td>
+                        <td data-cell="usuario">São Paulo</td>
+        
+                        <td data-cell="acao"><img src="../Imagens/lapis01.svg" alt="excluir" id="livro-verde">
+                        <img src="../Imagens/lixeira.svg" alt="" id="livro-verde">
+                        </td>
+        
+                       </tr>
+                       <tr>
+                        <td data-cell="Nlivro">Editora Rocco</td>
+                        <td data-cell="usuario">São Paulo</td>
+        
+                        <td data-cell="acao"><img src="../Imagens/lapis01.svg" alt="excluir" id="livro-verde">
+                        <img src="../Imagens/lixeira.svg" alt="" id="livro-verde">
+                        </td>
+        
+                       </tr>
+
+                       <tr>
+                        <td data-cell="Nlivro">Editora Rocco</td>
+                        <td data-cell="usuario">São Paulo</td>
+        
+                        <td data-cell="acao"><img src="../Imagens/lapis01.svg" alt="excluir" id="livro-verde">
+                        <img src="../Imagens/lixeira.svg" alt="" id="livro-verde">
+                        </td>
+        
+                       </tr>
+
+                       <tr>
+                        <td data-cell="Nlivro">Editora Rocco</td>
+                        <td data-cell="usuario">São Paulo</td>
+        
+                        <td data-cell="acao"><img src="../Imagens/lapis01.svg" alt="excluir" id="livro-verde">
+                        <img src="../Imagens/lixeira.svg" alt="" id="livro-verde">
+                        </td>
+        
+                       </tr>
+
+                       <tr>
+                        <td data-cell="Nlivro">Editora Rocco</td>
+                        <td data-cell="usuario">São Paulo</td>
+        
+                        <td data-cell="acao"><img src="../Imagens/lapis01.svg" alt="excluir" id="livro-verde">
+                        <img src="../Imagens/lixeira.svg" alt="" id="livro-verde">
+                        </td>
+        
+                       </tr>
+                       <tr>
+                        <td data-cell="Nlivro">Editora Rocco</td>
+                        <td data-cell="usuario">São Paulo</td>
+        
+                        <td data-cell="acao"><img src="../Imagens/lapis01.svg" alt="excluir" id="livro-verde">
+                        <img src="../Imagens/lixeira.svg" alt="" id="livro-verde">
+                        </td>
+        
+                       </tr>
+                       <tr>
+                        <td data-cell="Nlivro">Editora Rocco</td>
+                        <td data-cell="usuario">São Paulo</td>
+        
+                        <td data-cell="acao"><img src="../Imagens/lapis01.svg" alt="excluir" id="livro-verde">
+                        <img src="../Imagens/lixeira.svg" alt="" id="livro-verde">
+                        </td>
+        
+                       </tr>
+                       <tr>
+                        <td data-cell="Nlivro">Editora Rocco</td>
+                        <td data-cell="usuario">São Paulo</td>
+        
+                        <td data-cell="acao"><img src="../Imagens/lapis01.svg" alt="excluir" id="livro-verde">
+                        <img src="../Imagens/lixeira.svg" alt="" id="livro-verde">
+                        </td>
+        
+                       </tr>
+
+                       <tr>
+                        <td data-cell="Nlivro">Editora Rocco</td>
+                        <td data-cell="usuario">São Paulo</td>
+        
+                        <td data-cell="acao"><img src="../Imagens/lapis01.svg" alt="excluir" id="livro-verde">
+                        <img src="../Imagens/lixeira.svg" alt="" id="livro-verde">
+                        </td>
+        
+                       </tr>
+                  </table> 
+
+                <!--Tabela-->
+
+                </div>
+               
+        </main>
+    </div>
+
+</body>
+<script src="../Javascript/Javascript.js"></script>
+</html>
